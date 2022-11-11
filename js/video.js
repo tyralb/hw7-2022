@@ -12,7 +12,6 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
-	var video = document.querySelector("#player1")
 	video.play();
 
 	document.querySelector("#volume").innerHTML = video.volume * 100 + "%"
@@ -20,7 +19,6 @@ document.querySelector("#play").addEventListener("click", function() {
 
 document.querySelector("#pause").addEventListener("click", function() {
 	console.log("Pause Video");
-	var video = document.querySelector("#player1")
 	video.pause();
 });
 
@@ -28,7 +26,6 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function() {
 	console.log("Slow down");
-	var video = document.querySelector("#player1")
 	video.playbackRate *= .9;
 	console.log("video speed is " + video.playbackRate)
 
@@ -36,7 +33,6 @@ document.querySelector("#slower").addEventListener("click", function() {
 
 document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Speed up");
-	var video = document.querySelector("#player1")
 	video.playbackRate /= .9;
 	console.log("video speed is " + video.playbackRate)
 
@@ -79,8 +75,6 @@ document.querySelector("#slider").addEventListener("click", function() {
 document.querySelector("#vintage").addEventListener("click", function() {
 	console.log("old school");
 	document.querySelector(".video").classList.add('oldSchool');
-
-	
 });
 
 // Original: Remove the oldSchool class from the video.
